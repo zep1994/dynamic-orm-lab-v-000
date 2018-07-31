@@ -55,7 +55,7 @@ class InteractiveRecord
 
   def self.find_by(id)
     sql = <<-SQL
-      SELECT * FROM Student WHERE id = ?
+      SELECT * FROM name WHERE id = ?
     SQL
 
   end
