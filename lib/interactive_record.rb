@@ -53,4 +53,11 @@ class InteractiveRecord
     DB[:conn].execute(sql)
   end
 
+  def self.find_by(id)
+    sql = <<-SQL
+      SELECT * FROM Student WHERE id = ?
+    SQL
+
+  end
+
 end
